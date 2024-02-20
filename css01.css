@@ -48,7 +48,7 @@ main {
     color: blue;
     padding: 2px;
     }
-/* Раздел статьи */
+/* Заголовок раздела статьи */
 h3.part {
     text-align: center;
     /*background-color: #759498; */
@@ -64,6 +64,8 @@ p.subp {
     margin-top: 0px ;
     padding-left: 3% ;
     }
+/* Любой параграф */
+p {text-align: justify;}
 ol { list-style-position: inside;  /* Маркер внутри списка */ }
 footer {
     min-height: 100px;
@@ -76,8 +78,6 @@ footer {
 body {  /* в body  создаем 1-й счетчик для разделов */
   counter-reset: part /* Создаем счетчик, от слова partition */
   }
-
-/* Оглавление разделов */
 h3.part {
   counter-reset: subpart 0;  /* В каждом теге с классом ЗАНОВО создаем новый 2-й счетчик. */
   counter-increment: part 1;  /* Увеличиваем 1-й счетчик */
