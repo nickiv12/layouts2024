@@ -1,0 +1,106 @@
+/* Стили контейнера сайта */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 500px;
+    background-color: #D0D0D0; /* Фоновый цвет сайта*/
+    color: #5e5e5e; /* Цвет шрифта на сайте */
+    }
+/* --- Стили заголовка всего сайта ---- */
+/* Логотип */
+header.logo {
+    margin: 0 auto;
+    background-color: #295151;
+    color: #F2F4D2;  /* Цвет шрифта логотипа и  пунктов меню */
+    }
+/* Заголовко логотипа */
+h1 {
+    text-align: center;  /* Выровнял по центру */
+    font-size: 20px;  /* Уменьшил размер, а важность (h1) осталась. */
+    }
+
+/* --- Главное меню 2-х колоночного сайта --- */
+nav.nav-main {
+    display: flex;
+    justify-content: space-around;  /* Пункты меню равномерно по ширине */
+    }
+/* Пункты главного меню */
+.nav-item {
+    cursor: pointer;
+    }
+
+/* ===== Стили 2-х колоночной части сайта ======================= */
+/* Заголовок статьи */
+header h2 {
+    text-align: center;
+    }
+main {
+    display: flex;  padding: 1px;  /* 2-е колонки рядом */
+    justify-content: space-between;  /* Колонки прижаты к разным сторонам*/
+    }
+.left {  /* Стили левой колонки */
+    width: 69%;
+    padding: 2px;
+    background-color: #E7E7E7; /* Цвет левой части сайата */
+    }
+.right {  /* Стили правой колонки */
+    width: 30%;
+    color: blue;
+    padding: 2px;
+    }
+/* Раздел статьи */
+h3.part {
+    text-align: center;
+    /*background-color: #759498; */
+    color: #874444;
+    }
+/* Подраздел раздела статьи */
+h4.subpart {
+    text-align: left;
+    margin-bottom: 0px ;
+    }
+/* Параграф подраздела */
+p.subp {
+    margin-top: 0px ;
+    padding-left: 3% ;
+    }
+ol { list-style-position: inside;  /* Маркер внутри списка */ }
+footer {
+    min-height: 100px;
+    border: 1px solid grey;
+    background-color: grey;
+    text-align: center;
+    }
+
+/* ---  Автонумерация разделов и подразделов статьи --- */
+body {  /* в body  создаем 1-й счетчик для разделов */
+  counter-reset: part /* Создаем счетчик, от слова partition */
+  }
+
+/* Оглавление разделов */
+h3.part {
+  counter-reset: subpart 0;  /* В каждом теге с классом ЗАНОВО создаем новый 2-й счетчик. */
+  counter-increment: part 1;  /* Увеличиваем 1-й счетчик */
+  text-align: center;  /* Выравниваем по центру */
+  }
+h3.part::before {
+    content: counter(part) ". ";
+    }
+h4.subpart::before {
+     counter-increment: subpart 1;  /* Указываем число для увеличения */
+     content: counter(part) "." counter(subpart) ".";
+     }
+
+
+ /* ---- Media Query ------------  */
+ /* Стили для устройств с которым работают пальцами (смартфоны, планшеты.  */
+ @media (hover: none) and (pointer: coarse) {
+     .left { width: 100%; }  /* Ширина левой колонки */
+     .right { display: none; }  /*  */
+     }
+
+    /* Для десктопа, если пользователь уменьшит ширину вкладки браузера  */
+     @media screen and (max-width: 800px)  {
+        .left { width: 100%; }  /* Ширина левой колонки */
+        .right { display: none; }  /*  */
+        }
