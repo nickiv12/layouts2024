@@ -1,3 +1,6 @@
+body {
+    margin: 0 0;
+    }
 /* Стили контейнера сайта */
 .container {
     width: 100%;
@@ -63,9 +66,13 @@ h4.subpart {
 p.subp {
     margin-top: 0px ;
     padding-left: 3% ;
+    text-indent: 0;  /* Убираю красную строку */
     }
 /* Любой параграф */
-p {text-align: justify;}
+p {
+    text-align: justify;  /* Выравнивание текста по всей ширине */
+    text-indent: 3%;  /* Красная первая строка */
+    }
 ol { list-style-position: inside;  /* Маркер внутри списка */ }
 footer {
     min-height: 100px;
