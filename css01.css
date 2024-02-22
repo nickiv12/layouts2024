@@ -1,5 +1,7 @@
 body {
     margin: 0px;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
     }
 /* Стили контейнера сайта */
 .container {
@@ -17,12 +19,6 @@ header.logo {
     background-color: #295151;
     color: #F2F4D2;  /* Цвет шрифта логотипа и  пунктов меню */
     }
-/* Заголовко логотипа */
-h1 {
-    text-align: center;  /* Выровнял по центру */
-    font-size: 20px;  /* Уменьшил размер, а важность (h1) осталась. */
-    }
-
 /* --- Главное меню 2-х колоночного сайта --- */
 nav.nav-main {
     display: flex;
@@ -35,8 +31,9 @@ nav.nav-main {
 
 /* ===== Стили 2-х колоночной части сайта ======================= */
 /* Заголовок статьи */
-header h2 {
+h1 {
     text-align: center;
+    font-size: 18px;  /* Уменьшил размер, а важность (h1) осталась. */
     }
 main {
     display: flex;  padding: 1px;  /* 2-е колонки рядом */
@@ -55,13 +52,14 @@ main {
 /* Заголовок раздела статьи */
 h2.part {
     text-align: center;
-    font-size: 16px;
     color: #874444;
+    font-size: 19px;  /* Изменил размер под основной шрифт. */
     }
 /* Подраздел раздела статьи */
-h4.subpart {
+h3.subpart {
     text-align: left;
     margin-bottom: 0px ;
+    font-size: 18px;  /* Изменил размер под основной шрифт. */
     }
 /* Параграф подраздела */
 p.sub-p {
@@ -91,15 +89,15 @@ footer {
 body {  /* в body  создаем 1-й счетчик для разделов */
   counter-reset: part /* Создаем счетчик, от слова partition */
   }
-h3.part {
+h2.part {
   counter-reset: subpart 0;  /* В каждом теге с классом ЗАНОВО создаем новый 2-й счетчик. */
   counter-increment: part 1;  /* Увеличиваем 1-й счетчик */
   text-align: center;  /* Выравниваем по центру */
   }
-h3.part::before {
+h2.part::before {
     content: counter(part) ". ";
     }
-h4.subpart::before {
+h3.subpart::before {
      counter-increment: subpart 1;  /* Указываем число для увеличения */
      content: counter(part) "." counter(subpart) ".";
      }
