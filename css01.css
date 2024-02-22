@@ -63,17 +63,22 @@ h4.subpart {
     margin-bottom: 0px ;
     }
 /* Параграф подраздела */
-p.subp {
+p.sub-p {
     margin-top: 0px ;
     padding-left: 3% ;
     text-indent: 0;  /* Убираю красную строку */
     }
+ol.sub-ol {
+    list-style-position: outside; /* Маркер снаружи списка */
+    list-style-type: lower-alpha;
+    color: blue;
+    }
+
 /* Любой параграф */
 p {
     text-align: justify;  /* Выравнивание текста по всей ширине */
     text-indent: 3%;  /* Красная первая строка */
     }
-ol { list-style-position: inside;  /* Маркер внутри списка */ }
 footer {
     min-height: 100px;
     border: 1px solid grey;
