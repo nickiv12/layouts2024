@@ -13,6 +13,7 @@ body {
 /* Логотип */
 header.logo {
     margin: 0 auto;
+    height: 50px;
     background-color: #295151;
     color: #F2F4D2;  /* Цвет шрифта логотипа и  пунктов меню */
     }
@@ -52,9 +53,9 @@ main {
     padding: 2px;
     }
 /* Заголовок раздела статьи */
-h3.part {
+h2.part {
     text-align: center;
-    /*background-color: #759498; */
+    font-size: 16px;
     color: #874444;
     }
 /* Подраздел раздела статьи */
