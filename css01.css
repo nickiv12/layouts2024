@@ -131,12 +131,13 @@ h3.subpart::before {
  @media (hover: none) and (pointer: coarse) {
      .left { width: 100%; }  /* Ширина левой колонки */
      .right { display: none; }  /* Убираем правую колонку */
-     html {font-size: 14px;}   Уменьшае размер основного шрифта  
+     html {font-size: 14px;}   /* Уменьшае размер основного шрифта  */
      }
 
 /* Для десктопа, если пользователь уменьшит ширину вкладки браузера  */
 @media screen and (max-width: 800px)  {
    .left { width: 100%; }  /* Ширина левой колонки */
+/*    html {font-size: 12px;}*/
    .right { display: none; }  /*  */
    }
 
