@@ -115,14 +115,14 @@ article > p.sub-p {
 /* ---- Список в статье ---- */
 /* Заголовок списка  */
 span.ol-span {
-    margin-left: -20px;  /* Сдвигаем влево */ 
+     margin-left: -0.9rem;  /* Сдвигаем влево  */
     font-weight: 600;  /* Выделяем жирным */
     }
 /* Список */
 article > ol.sub-ol {
     list-style-position: outside; /* Маркер снаружи списка */
     list-style-type: lower-alpha;
-    padding-left: 2.2rem;
+    padding-left: 2.5rem;
     margin-top: 0px ;
     margin-bottom: 0.3rem;  /* Отступ снизу */
 /*    border: 1px solid red;*/
