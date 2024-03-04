@@ -168,7 +168,7 @@ h3.subpart::before {
      }
 
 /* Для десктопа, если пользователь уменьшит ширину вкладки браузера  */
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 900px)  {
    .left { width: 100%; }  /* Ширина левой колонки */
    .right { display: none; }  /*  */
    }
