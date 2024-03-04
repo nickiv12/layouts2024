@@ -71,8 +71,8 @@ header > h1 {
     text-align: center;
     font-size: 1.2rem;  /* Размер шрифта от html. */
     color: #1A3A85;  /* Пока такой же как цвет шрифта всего текста */
-    margin-top: 0px;  /* Отступ сверху в 0 */
-    margin-bottom: 0.4rem;  /* Отступ снизу */
+    margin-top: 0.4rem;  /* Отступ сверху в 0 */
+    margin-bottom: 0;  /* Отступ снизу */
 /*    border: 1px solid red;*/
     }
 
@@ -80,8 +80,8 @@ header > h1 {
 article > p {
     text-align: justify;  /* Выравнивание текста по всей ширине */
     text-indent: 3%;  /* Красная первая строка */
-    margin-top: 0px;  /* Отступ сверху в 0 */
-    margin-bottom: 0.3rem;  /* Отступ снизу */
+    margin-top: 0.3rem;  /* Отступ сверху в 0 */
+    margin-bottom: 0;  /* Отступ снизу */
 /*    border: 1px solid red;*/
     }
 /* Заголовок раздела статьи */
@@ -89,8 +89,8 @@ article > h2.part {
     text-align: center;
     color: #295151;
     font-size: 1.1rem;  /* Размер шрифта от html. */
-    margin-top: 0px;  /* Отступ сверху в 0 */
-    margin-bottom: 0.3rem;  /* Отступ снизу */    
+    margin-top: 0.3rem;  /* Отступ сверху в 0 */
+    margin-bottom: 0;  /* Отступ снизу */    
 /*    border: 1px solid red;*/
     }
 
@@ -98,8 +98,8 @@ article > h2.part {
 article > h3.subpart {
     text-align: left;
     font-size: 1rem;  /* Размер шрифта от html. */
-    margin-top: 0px;  /* Отступ сверху в 0 */
-    margin-bottom: 0.1rem;  /* Отступ снизу */
+    margin-top: 0.2rem;  /* Отступ сверху в 0 */
+    margin-bottom: 0;  /* Отступ снизу */
 /*    border: 1px solid red;*/
     }
 
@@ -123,8 +123,8 @@ article > ol.sub-ol {
     list-style-position: outside; /* Маркер снаружи списка */
     list-style-type: lower-alpha;
     padding-left: 2.5rem;
-    margin-top: 0px ;
-    margin-bottom: 0.3rem;  /* Отступ снизу */
+    margin-top: 0.3rem;
+    margin-bottom: 0;  /* Отступ снизу */
 /*    border: 1px solid red;*/
     }
 /* Низ списка */
