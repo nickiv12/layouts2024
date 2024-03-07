@@ -144,9 +144,9 @@
      *  если в адресной строке есть якорь ТО не произойдет переход к разделу страницы т.к еще не будет идентификатора.
      *  ОБРАБАТЫВАЕМ имена абзацев (h4) И СОЗДАЕМ имена разделов с атрибутами в оглавлении страницы.
     */
-		// Получаю доступ к списку оглавления страницы
+		// Получаю доступ к списку оглавления страницы, чтобы сделать ссылки
 		const list = document.querySelector("#toc-ol");
-		// Выбираем ВСЕ разделы страницы.
+		// Выбираем ВСЕ разделы страницы, чтобы добав.
 	  const elements = document.querySelectorAll("h2.part");
 		// Цикл.
 	  for (let i = 0; i < elements.length; i++) {
@@ -155,10 +155,11 @@
 			// Выводим в консоль названия разделов
 			console.log(elements[i].innerText);
 			// Добавляю строку в список.
-			const newElement = document.createElement("li");
-			newElement.textContent = elements[i].innerText;
-			list.appendChild(newElement);
-			
+			const new_li = document.createElement("li");
+			new_li.innerHTML = `<a href='#toc-${i + 1}'> ${elements[i].innerText}</a>`;
+			//new_li.textContent = elements[i].innerText;
+			//new_li.innerHTML = "<a href='#toc-" + (i+1) + "'>" + elements[i].innerText + "</a>" ;
+			list.appendChild(new_li);
       }
       
       
