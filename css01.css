@@ -70,7 +70,7 @@ main {
 #toc-main { 
   position: fixed;
   top: 70px;
-	right: 20px;
+	right: 30%;
   z-index: 10;  /* Поверх других элементов */
 	font-size: 0.8rem;
   padding: 2px;
@@ -244,5 +244,7 @@ h3.subpart::before {
 @media screen and (max-width: 900px)  {
    .left { width: 100%; }  /* Ширина левой колонки */
    .right { display: none; }  /*  */
+		#toc-main { 
+			right: 3%;  /* Позиция оглавления для одной колонки */
    }
 
