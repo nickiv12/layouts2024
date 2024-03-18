@@ -253,7 +253,7 @@ h3.subpart::before {
 @media screen and (max-width: 900px)  {
    .left { width: 100%; }  /* Ширина левой колонки */
    .right { display: none; }  /*  */
-		#toc-main { 
+		#toc-page, #toc-small { 
 			right: 3%;  /* Позиция оглавления для одной колонки */
    }
 
