@@ -268,8 +268,8 @@ h3.subpart::before {
  @media (hover: none) and (pointer: coarse) {
 	 .left { width: 100%; }  /* Ширина левой колонки */
 	 .right { display: none; }  /* Убираем правую колонку */
-	 .nav-main { display: none; /* Убыираем большую навигацию */	 }
-	 #nav-smart-open { display: block}
+	 .nav-main { display: none;} /* Убыираем большую навигацию */	 
+	 #nav-smart-open { display: flex;}
 	 html {font-size: 16px;}   /* Уменьшаю размер основного шрифта с 18 до 16  */
 	/* Позиция оглавления для одной колонки */
 	 #toc-page, #toc-small { 
