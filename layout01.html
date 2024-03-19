@@ -13,12 +13,23 @@
 	<div class="container">  <!-- Контейнер всего сайта -->
 		<header class="logo">  <!-- Заголовок всего сайта -->
 			ЗАГОЛОВОК ВСЕГО САЙТА
+			<!--	Навигация для десктопа		-->
 			<nav class="nav-main">
 				<div class="nav-item">Python</div>
 				<div class="nav-item">HTML</div>
 				<div class="nav-item">CSS</div>
 				<div class="nav-item">JavaScript</div>
 			</nav>
+			<!--		Иконка открытия меню для смартфона	-->
+			<div id="nav-smart-open">
+				<div class="string">&nbsp;</div>
+				<div class="string">&nbsp;</div>
+				<div class="string">&nbsp;</div>
+			</div>
+			<!--		Mеню для смартфона	
+			<nav id="nav-smart">
+
+			</nav>-->
 		</header>
 		<main>  <!-- Главная часть сайта: содержит 2-е колонки -->
             
@@ -29,21 +40,23 @@
       	    <a href="#"> / LEVEL1 /</a>
       	    <span>/ Название статьи и не ссылка.</span>
       	</nav>
+				<!--		Якорь для перехода на верх страницы		-->
+				<div id="page-up"></div>
 				
 				<!-- ==== 2024 Контейнер ОГЛАВЛЕНИЯ СТРАНИЦЫ ===== -->
 					<!-- Контейнер для пунктов ОГЛАВЛЕНИЯ.	-->
-					<div id="toc-page" class="nav-position nav-decor">
+					<nav id="toc-page" class="nav-position nav-decor">
 						<!-- Заголовок оглавления с якорем на верх страницы	-->
           	<h4 id="toc-h4">
 							<span class="triangle-top"></span>
 							<!--	Ссылка ПОКА никуда не ведет, 	-->
-							<a href="#site-control">Оглавление страницы:</a>
+							<a href="#page-up">Оглавление страницы:</a>
 						</h4> <!-- Якорь на самый ввех страницы -->
           	<!-- Нумерованный список для добавления строк списка из js -->
 						<ol id="toc-ol" class="list-1"> 
           	</ol>
 					<!-- Контейнер для стрелки вних	-->
-					</div>
+					</nav>
         	<div id="toc-small" class="nav-position  nav-decor">
           	<span>&nbsp;</span>  <!-- Неразрывный пробел. Чтобы курсор был виден и в диве, а не только на стрелке -->
           	<span class="triangle-down"></span>

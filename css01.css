@@ -30,20 +30,41 @@ body {
 /* Логотип */
 header.logo {
     margin: 0 auto;
-    height: 50px;
+/*    height: 70px;*/
     background-color: #295151;
     color: #F2F4D2;  /* Цвет шрифта логотипа и  пунктов меню */
+		padding-bottom: 5px;  /* Отступ внизу */
     }
 
 /* --- Главное меню 2-х колоночного сайта --- */
 nav.nav-main {
     display: flex;
     justify-content: space-around;  /* Пункты меню равномерно по ширине */
+/*		display: none;*/
     }
 /* Пункты главного меню */
 .nav-item {
     cursor: pointer;
     }
+
+/* --- Стили иконки из полосок на открытие меню для смартфона ---- */
+#nav-smart-open {
+/*	border: 1px solid red;*/
+	margin-left: 20px;
+	width: 20px;
+/*	height: 20px;*/
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+/*	margin-bottom: 5px;*/
+	}
+/* Полоски иконки  */
+.string {
+	height: 3px;
+	margin-top: 5px;
+	background-color: white;
+	}
 
 /* ===== Стили 2-х колоночной части сайта ======================= */
 /* --- Главная часть --------- */
@@ -247,6 +268,9 @@ h3.subpart::before {
      .left { width: 100%; }  /* Ширина левой колонки */
      .right { display: none; }  /* Убираем правую колонку */
      html {font-size: 16px;}   /* Уменьшаю размер основного шрифта с 18 до 16  */
+		 /* Позиция оглавления для одной колонки */
+	 #toc-page, #toc-small { 
+			right: 3%; 
      }
 
 /* Для десктопа, если пользователь уменьшит ширину вкладки браузера  */
