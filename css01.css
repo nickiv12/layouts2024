@@ -37,7 +37,7 @@ header.logo {
     }
 
 /* --- Главное меню 2-х колоночного сайта --- */
-nav.nav-main {
+#nav-main {
     display: flex;
     justify-content: space-around;  /* Пункты меню равномерно по ширине */
 /*		display: none;*/
