@@ -62,8 +62,8 @@ header.logo {
 	}
 /* Полоски иконки  */
 .string {
-	height: 3px;
-	margin-top: 5px;
+	height: 2px;
+	margin-top: 4px;
 	background-color: white;
 	}
 
@@ -272,15 +272,18 @@ h3.subpart::before {
 	 #nav-smart-open { display: flex;}
 	 html {font-size: 16px;}   /* Уменьшаю размер основного шрифта с 18 до 16  */
 	/* Позиция оглавления для одной колонки */
-	 #toc-page, #toc-small { 
-		 right: 3%; 
-   }
+	 #toc-page, #toc-small { right: 3%; }  
+}  /* --- КОНЕЦ @media */
 
 /* Для десктопа, если пользователь уменьшит ширину вкладки браузера  */
 @media screen and (max-width: 900px)  {
    .left { width: 100%; }  /* Ширина левой колонки */
    .right { display: none; }  /*  */
-		#toc-page, #toc-small { 
-			right: 3%;  /* Позиция оглавления для одной колонки */
-   }
-
+		
+		/* Позиция оглавления для одной колонки */
+		#toc-page, #toc-small { right: 3%; }
+		/* --- Показываем навигацию для смартфона --- */
+		 #nav-main { display: none;} /* Убыираем большую навигацию */	
+			#nav-smart-open {display: flex; }
+	
+	 }  /* --- КОНЕЦ @media */
