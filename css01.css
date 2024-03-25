@@ -35,6 +35,11 @@ header.logo {
     color: #F2F4D2;  /* Цвет шрифта логотипа и  пунктов меню */
 		padding-bottom: 5px;  /* Отступ внизу */
     }
+/* Текст в логотипе */
+.center {
+		display: block;
+		text-align: center;
+}
 
 /* --- Главное меню 2-х колоночного сайта --- */
 #nav-main {
